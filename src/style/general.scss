@@ -3,3 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.wrapper {
+    max-width: 1500px;
+    margin: 0 auto;
+
+    // debug
+    border: 1px solid black;
+}
