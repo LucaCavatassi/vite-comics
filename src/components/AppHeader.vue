@@ -23,6 +23,7 @@
     @use "../style/partials/variables" as *;
 
     header {
+        height: 100px;
         padding: 20px;
         display: flex;
         justify-content: space-between;
@@ -39,6 +40,8 @@
                 text-transform: uppercase;
                 font-weight: bold;
                 font-size: 0.7rem;
+                display: block;
+                position: relative;
 
                 a{
                     text-decoration: none;
@@ -48,6 +51,22 @@
                 &:hover {
                     color: $primary-color;
                 }
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    transform: scaleX(0);
+                    height: 3px; 
+                    top: 53px;
+                    left: 0;
+                    background-color: $primary-color;
+                    transition: transform 0.25s ease-out;
+                }
+
+                &:hover::after {
+                    transform: scaleX(1); /* Scale the underline on hover */
+                }
             }
         }
 
@@ -55,5 +74,6 @@
             width: 70px;
         }
     }
+
 
 </style>
