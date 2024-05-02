@@ -4,7 +4,11 @@
     box-sizing: border-box;
 }
 
-.wrapper {
+body {
+    font-family: sans-serif;
+}
+
+.big-wrapper {
     max-width: 1500px;
     margin: 0 auto;
     display: flex;
@@ -12,4 +16,8 @@
 
     // debug
     border: 1px solid black;
+}
+
+.small-wrapper {
+    width: 80%;
 }

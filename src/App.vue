@@ -22,11 +22,13 @@
 </script>
 
 <template>
-  <div class="wrapper">
-    <AppHeader />
-    <AppMain />
-    <AppFooterTop />
-    <AppFooterBottom />
+  <div class="big-wrapper">
+    <div>
+      <AppHeader />
+      <AppMain />
+      <AppFooterTop />
+      <AppFooterBottom />
+    </div>
   </div>
 </template>
 
