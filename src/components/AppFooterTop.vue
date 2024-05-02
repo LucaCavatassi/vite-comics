@@ -81,7 +81,7 @@
                 }
                 
                 &:last-child img {
-                    width: 30%;
+                    max-width: 65px;
                 }
             }
         }
