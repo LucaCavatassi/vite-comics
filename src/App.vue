@@ -3,6 +3,7 @@
   import AppMain from "./components/AppMain.vue";
   import AppFooterTop from "./components/AppFooterTop.vue"; 
   import AppFooterBottom from "./components/AppFooterBottom.vue";
+  import AppSocials from "./components/AppSocials.vue";
 
 
   export default {
@@ -11,6 +12,7 @@
       AppMain,
       AppFooterTop,
       AppFooterBottom,
+      AppSocials,
     },
 
     data() {
@@ -28,6 +30,7 @@
       <AppMain />
       <AppFooterTop />
       <AppFooterBottom />
+      <AppSocials />
     </div>
   </div>
 </template>
