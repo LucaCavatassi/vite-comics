@@ -9,14 +9,25 @@
 </script>
 
 <template>
-    <div>
-        <span>Main</span>
+    <div class="container">
+        <main class="small-wrapper">
+            <div> --> Content Goes Here... <-- </div>
+        </main>
     </div>
 </template>
 
 <style scoped lang="scss">
-    div {
-        // debug
-        background-color: aquamarine;
+    @use "../style/partials/variables" as *;
+
+    .container {
+        display: flex;
+        justify-content: center;
+        background-color: $main-black;
+        div {
+            padding: 50px 0;
+            color: white;
+            font-weight: bolder;
+            font-size: 1.3rem;
+        }
     }
 </style>
