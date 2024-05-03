@@ -11,7 +11,7 @@
 <template>
     <div>
         <header class="small-wrapper">
-            <img src="/public/dc-logo.png" alt="">
+            <img src="/dc-logo.png" alt="">
             <ul>
                 <li v-for="linkName in linksNamesArray"> <a href="">{{ linkName }}</a></li>
             </ul>
