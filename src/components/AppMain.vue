@@ -91,11 +91,12 @@ export default {
     <div class="container">
         <main class="small-wrapper">
             <div class="row"> 
-                    <ComicCard class="col" 
-                    v-for="comic in allComics" 
+                <div class="col" v-for="comic in allComics">
+                    <ComicCard 
                     :cardThumb = "comic.thumb"
                     :cardSeries="comic.series"
                     />
+                </div>
             </div>
         </main>
     </div>
@@ -110,15 +111,15 @@ export default {
     background-color: $main-black;
 
     .row {
+        margin: 30px 0;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: stretch;
         flex-wrap: wrap;
         gap: 10px;
 
         .col{
             width: calc(100% / 6 - 25px);
-            height: 100%;
         }
     }
 }
