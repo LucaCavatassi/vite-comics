@@ -90,6 +90,7 @@ export default {
 <template>
     <div class="container">
         <main class="small-wrapper">
+            <span>CURRENT SERIES</span>
             <div class="row"> 
                 <div class="col" v-for="comic in allComics">
                     <ComicCard 
@@ -97,6 +98,9 @@ export default {
                     :cardSeries="comic.series"
                     />
                 </div>
+            </div>
+            <div class="button">
+                <button>LOAD MORE</button>
             </div>
         </main>
     </div>
@@ -109,17 +113,46 @@ export default {
     display: flex;
     justify-content: center;
     background-color: $main-black;
+    main {
+        position: relative;
 
-    .row {
-        margin: 30px 0;
-        display: flex;
-        justify-content: space-between;
-        align-items: stretch;
-        flex-wrap: wrap;
-        gap: 10px;
+        span {
+            color: white;
+            font-weight: bold;
+            background-color: $primary-color;
+            padding: 10px;
+            position: absolute;
+            top: -20px;
+            left: -10px;
+            
+        }
 
-        .col{
-            width: calc(100% / 6 - 25px);
+        .row {
+            margin-top: 30px;
+            padding-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+            flex-wrap: wrap;
+            gap: 10px;
+    
+            .col{
+                width: calc(100% / 6 - 25px);
+            }
+        }
+
+        .button{
+            margin: 30px 20px;
+            button {
+                margin: 0 auto;
+                padding: 5px 20px;
+                display: block;
+                font-family: sans-serif;
+                background-color: $primary-color;
+                border: none;
+                color: white;
+                font-weight: bold;
+            }
         }
     }
 }
